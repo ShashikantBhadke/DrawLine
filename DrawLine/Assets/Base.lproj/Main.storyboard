@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawLinesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFl-pl-RjO" customClass="CanvasView" customModule="DrawLinesDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9gO-jG-Wrm">
+                                <rect key="frame" x="10" y="833" width="34" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sz-tg-C3Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="7o1-Fg-4Tv"/>
+                                            <constraint firstAttribute="width" constant="34" id="kAC-K9-AhU"/>
+                                        </constraints>
+                                        <state key="normal" image="plusIcon"/>
+                                        <connections>
+                                            <action selector="btnMenuPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YjO-bh-K6I"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VL-q5-4uy">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="34"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="btnClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xko-Zf-TLM"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oc-7W-Eif">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="34"/>
+                                        <state key="normal" title="Undo Last"/>
+                                        <connections>
+                                            <action selector="btnUndoLastPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Skm-Q4-UV3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SFl-pl-RjO" secondAttribute="bottom" id="151-jg-sO1"/>
+                            <constraint firstItem="SFl-pl-RjO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3YI-TR-HGC"/>
+                            <constraint firstItem="SFl-pl-RjO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nib-Yq-diA"/>
+                            <constraint firstItem="9gO-jG-Wrm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="5" id="W4s-Tr-7Qt"/>
+                            <constraint firstItem="SFl-pl-RjO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZMh-ae-bGh"/>
+                            <constraint firstItem="9gO-jG-Wrm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="deo-e9-VgH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnClear" destination="2VL-q5-4uy" id="P9v-fV-0sx"/>
+                        <outlet property="btnMenu" destination="6Sz-tg-C3Z" id="Vbb-ta-RIZ"/>
+                        <outlet property="btnUndoLast" destination="0Oc-7W-Eif" id="P6F-J7-Kqs"/>
+                        <outlet property="viewBoard" destination="SFl-pl-RjO" id="PkH-Um-YZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plusIcon" width="26.5" height="26.5"/>
+    </resources>
+</document>
