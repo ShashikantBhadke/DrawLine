@@ -8,17 +8,20 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
     
     // MARK:- Outlets
     @IBOutlet internal weak var viewBoard       : CanvasView!
+    @IBOutlet private weak var slider           : UISlider!
+    @IBOutlet private weak var svSlider         : UIStackView!
     @IBOutlet private weak var btnMenu          : UIButton!
     @IBOutlet private weak var btnClear         : UIButton!
     @IBOutlet private weak var btnUndoLast      : UIButton!
+    @IBOutlet internal weak var btnColor        : UIButton!
     
     // MARK:- Variables
     var alertController: UIAlertController!
+    var arrColor = [UIColor.lightGray, UIColor.darkGray, UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.purple, UIColor.cyan, UIColor.brown, UIColor.magenta]
     
     // MARK:- ViewLifeCycle
     override func viewDidLoad() {
@@ -26,30 +29,36 @@ class ViewController: UIViewController {
         setUpView()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        confirmObservers()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        removeObservers()
-    }
-    
     // MARK:- SetUpView
     private func setUpView() {
         viewBoard.backgroundColor = UIColor.white
+        btnColor.layer.cornerRadius = btnColor.frame.width * 0.5
+        self.title = Constant.strUserID
+        viewBoard.clrStroke = (btnColor.backgroundColor ?? UIColor.lightGray)
     }
     
     // MARK:- Button Action
+    @IBAction func sliderLineWidthChanged(_ sender: UISlider) {
+        viewBoard.lineWidth = CGFloat(sender.value)
+    }
+    
+    @IBAction func btnColorChangePressed(_ sender: UIButton) {
+        self.showSBDropDown(strTitle: "Select Color", arrSelectedIndex: [0], arrElemets: arrColor, sourceView: sender, sourceRect: nil)
+    }
+    
     @IBAction func btnMenuPressed(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5) {
             
             self.btnClear.alpha = self.btnClear.isHidden ? 1 : 0
             self.btnUndoLast.alpha = self.btnUndoLast.isHidden ? 1 : 0
+            self.btnColor.alpha = self.btnUndoLast.isHidden ? 1 : 0
+            self.svSlider.alpha = self.btnClear.isHidden ? 1 : 0
             
             self.btnClear.isHidden.toggle()
             self.btnUndoLast.isHidden.toggle()
+            self.btnColor.isHidden.toggle()
+            self.svSlider.isHidden.toggle()
+            
             sender.setImage(self.btnClear.isHidden ? #imageLiteral(resourceName: "plusIcon") : #imageLiteral(resourceName: "minusIcon"), for: .normal)
         }
     }
@@ -81,15 +90,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    // MARK:- DB Methods
-    func confirmObservers() {
-        DataBase.addListners(.Point, self)
-    }
-    
-    func removeObservers() {
-        DataBase.removeObervers()
-    }
     // MARK:- Receive Memory Warning
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

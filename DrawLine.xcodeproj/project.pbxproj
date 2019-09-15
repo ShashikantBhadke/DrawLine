@@ -7,34 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		557238F5232E5319006BAD11 /* LineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557238F4232E5319006BAD11 /* LineModel.swift */; };
 		557F6178232CF8C400B5ED8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F6177232CF8C400B5ED8C /* AppDelegate.swift */; };
 		557F617A232CF8C400B5ED8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F6179232CF8C400B5ED8C /* ViewController.swift */; };
 		557F617D232CF8C400B5ED8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557F617B232CF8C400B5ED8C /* Main.storyboard */; };
 		557F617F232CF8C600B5ED8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557F617E232CF8C600B5ED8C /* Assets.xcassets */; };
-		557F6190232CF96200B5ED8C /* FarebaseDBRef+TempLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F618D232CF96200B5ED8C /* FarebaseDBRef+TempLine.swift */; };
-		557F6191232CF96200B5ED8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557F618E232CF96200B5ED8C /* GoogleService-Info.plist */; };
-		557F6192232CF96200B5ED8C /* FarebaseDBRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F618F232CF96200B5ED8C /* FarebaseDBRef.swift */; };
 		557F6199232CF9AF00B5ED8C /* ViewController+DataBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F6198232CF9AF00B5ED8C /* ViewController+DataBaseProtocol.swift */; };
 		557F619C232CF9F300B5ED8C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557F619A232CF9F300B5ED8C /* Launch Screen.storyboard */; };
 		557F619D232CFB8C00B5ED8C /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F6197232CF9A500B5ED8C /* CanvasView.swift */; };
+		55945F28232D1DC300280E3B /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F27232D1DC300280E3B /* UserController.swift */; };
+		55945F2A232D1EFC00280E3B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F29232D1EFC00280E3B /* Constant.swift */; };
+		55945F2C232D1F4B00280E3B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F2B232D1F4B00280E3B /* Enums.swift */; };
+		55945F2E232D26DD00280E3B /* ViewController+SBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F2D232D26DD00280E3B /* ViewController+SBProtocol.swift */; };
 		CBB4338224D185F4137884DA /* Pods_DrawLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39642AA6CFCDFB138ED45506 /* Pods_DrawLine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39642AA6CFCDFB138ED45506 /* Pods_DrawLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557238F4232E5319006BAD11 /* LineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineModel.swift; sourceTree = "<group>"; };
 		557F6174232CF8C400B5ED8C /* DrawLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557F6177232CF8C400B5ED8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557F6179232CF8C400B5ED8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		557F617C232CF8C400B5ED8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		557F617E232CF8C600B5ED8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		557F6183232CF8C600B5ED8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		557F618D232CF96200B5ED8C /* FarebaseDBRef+TempLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FarebaseDBRef+TempLine.swift"; path = "../../../../DrawLinesDemo/DrawLinesDemo/Helper/Firebase/FarebaseDBRef+TempLine.swift"; sourceTree = "<group>"; };
-		557F618E232CF96200B5ED8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../DrawLinesDemo/DrawLinesDemo/Helper/Firebase/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		557F618F232CF96200B5ED8C /* FarebaseDBRef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FarebaseDBRef.swift; path = ../../../../DrawLinesDemo/DrawLinesDemo/Helper/Firebase/FarebaseDBRef.swift; sourceTree = "<group>"; };
-		557F6196232CF9A500B5ED8C /* CanvasView+DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CanvasView+DataBase.swift"; sourceTree = "<group>"; };
 		557F6197232CF9A500B5ED8C /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		557F6198232CF9AF00B5ED8C /* ViewController+DataBaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+DataBaseProtocol.swift"; sourceTree = "<group>"; };
 		557F619B232CF9F300B5ED8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		55945F27232D1DC300280E3B /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		55945F29232D1EFC00280E3B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		55945F2B232D1F4B00280E3B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		55945F2D232D26DD00280E3B /* ViewController+SBProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SBProtocol.swift"; sourceTree = "<group>"; };
 		B988D51A33153514430EC86C /* Pods-DrawLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawLine.release.xcconfig"; path = "Target Support Files/Pods-DrawLine/Pods-DrawLine.release.xcconfig"; sourceTree = "<group>"; };
 		F0AE37F11536D8E78B654D30 /* Pods-DrawLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawLine.debug.xcconfig"; path = "Target Support Files/Pods-DrawLine/Pods-DrawLine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +69,14 @@
 				B988D51A33153514430EC86C /* Pods-DrawLine.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		557238F3232E530E006BAD11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				557238F4232E5319006BAD11 /* LineModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		557F616B232CF8C400B5ED8C = {
@@ -111,6 +122,7 @@
 		557F618A232CF92500B5ED8C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				55945F26232D1DA200280E3B /* UserController */,
 				557F6193232CF98300B5ED8C /* ViewController */,
 			);
 			path = Controllers;
@@ -119,6 +131,8 @@
 		557F618B232CF94A00B5ED8C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				55945F2B232D1F4B00280E3B /* Enums.swift */,
+				55945F29232D1EFC00280E3B /* Constant.swift */,
 				557F618C232CF95300B5ED8C /* Firebase */,
 			);
 			path = Helper;
@@ -127,9 +141,6 @@
 		557F618C232CF95300B5ED8C /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				557F618F232CF96200B5ED8C /* FarebaseDBRef.swift */,
-				557F618D232CF96200B5ED8C /* FarebaseDBRef+TempLine.swift */,
-				557F618E232CF96200B5ED8C /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -137,9 +148,10 @@
 		557F6193232CF98300B5ED8C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				557F6195232CF99100B5ED8C /* Extension */,
-				557F6194232CF98C00B5ED8C /* View */,
 				557F6179232CF8C400B5ED8C /* ViewController.swift */,
+				557F6194232CF98C00B5ED8C /* View */,
+				557238F3232E530E006BAD11 /* Model */,
+				557F6195232CF99100B5ED8C /* Extension */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -148,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				557F6197232CF9A500B5ED8C /* CanvasView.swift */,
-				557F6196232CF9A500B5ED8C /* CanvasView+DataBase.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,8 +168,17 @@
 			isa = PBXGroup;
 			children = (
 				557F6198232CF9AF00B5ED8C /* ViewController+DataBaseProtocol.swift */,
+				55945F2D232D26DD00280E3B /* ViewController+SBProtocol.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		55945F26232D1DA200280E3B /* UserController */ = {
+			isa = PBXGroup;
+			children = (
+				55945F27232D1DC300280E3B /* UserController.swift */,
+			);
+			path = UserController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +192,6 @@
 				557F6170232CF8C400B5ED8C /* Sources */,
 				557F6171232CF8C400B5ED8C /* Frameworks */,
 				557F6172232CF8C400B5ED8C /* Resources */,
-				1D757E1E6CCA6089D4EEAC38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,7 +243,6 @@
 				557F617F232CF8C600B5ED8C /* Assets.xcassets in Resources */,
 				557F617D232CF8C400B5ED8C /* Main.storyboard in Resources */,
 				557F619C232CF9F300B5ED8C /* Launch Screen.storyboard in Resources */,
-				557F6191232CF96200B5ED8C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,23 +271,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1D757E1E6CCA6089D4EEAC38 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DrawLine/Pods-DrawLine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DrawLine/Pods-DrawLine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrawLine/Pods-DrawLine-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,11 +279,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				557F6199232CF9AF00B5ED8C /* ViewController+DataBaseProtocol.swift in Sources */,
-				557F6190232CF96200B5ED8C /* FarebaseDBRef+TempLine.swift in Sources */,
 				557F619D232CFB8C00B5ED8C /* CanvasView.swift in Sources */,
+				557238F5232E5319006BAD11 /* LineModel.swift in Sources */,
+				55945F28232D1DC300280E3B /* UserController.swift in Sources */,
+				55945F2E232D26DD00280E3B /* ViewController+SBProtocol.swift in Sources */,
 				557F617A232CF8C400B5ED8C /* ViewController.swift in Sources */,
-				557F6192232CF96200B5ED8C /* FarebaseDBRef.swift in Sources */,
+				55945F2C232D1F4B00280E3B /* Enums.swift in Sources */,
 				557F6178232CF8C400B5ED8C /* AppDelegate.swift in Sources */,
+				55945F2A232D1EFC00280E3B /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
