@@ -7,6 +7,6 @@ target 'DrawLine' do
 
   # SBDropDown for Color Pic
   #pod 'SBDropDown'
-
+  pod 'SBDropDown', :path => '../SBDropDown'
 end
 
