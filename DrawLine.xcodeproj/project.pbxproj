@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2FF85123324AB200B0F568 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2FF85023324AB200B0F568 /* Extension.swift */; };
 		557238F5232E5319006BAD11 /* LineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557238F4232E5319006BAD11 /* LineModel.swift */; };
 		557F6178232CF8C400B5ED8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F6177232CF8C400B5ED8C /* AppDelegate.swift */; };
 		557F617A232CF8C400B5ED8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F6179232CF8C400B5ED8C /* ViewController.swift */; };
@@ -18,11 +19,12 @@
 		55945F28232D1DC300280E3B /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F27232D1DC300280E3B /* UserController.swift */; };
 		55945F2A232D1EFC00280E3B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F29232D1EFC00280E3B /* Constant.swift */; };
 		55945F2C232D1F4B00280E3B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F2B232D1F4B00280E3B /* Enums.swift */; };
-		55945F2E232D26DD00280E3B /* ViewController+SBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55945F2D232D26DD00280E3B /* ViewController+SBProtocol.swift */; };
 		CBB4338224D185F4137884DA /* Pods_DrawLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39642AA6CFCDFB138ED45506 /* Pods_DrawLine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2FF85023324AB200B0F568 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2B4B9652232FCA3000D46EA4 /* SBDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SBDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39642AA6CFCDFB138ED45506 /* Pods_DrawLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		557238F4232E5319006BAD11 /* LineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineModel.swift; sourceTree = "<group>"; };
 		557F6174232CF8C400B5ED8C /* DrawLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +39,6 @@
 		55945F27232D1DC300280E3B /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		55945F29232D1EFC00280E3B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		55945F2B232D1F4B00280E3B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		55945F2D232D26DD00280E3B /* ViewController+SBProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SBProtocol.swift"; sourceTree = "<group>"; };
 		B988D51A33153514430EC86C /* Pods-DrawLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawLine.release.xcconfig"; path = "Target Support Files/Pods-DrawLine/Pods-DrawLine.release.xcconfig"; sourceTree = "<group>"; };
 		F0AE37F11536D8E78B654D30 /* Pods-DrawLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawLine.debug.xcconfig"; path = "Target Support Files/Pods-DrawLine/Pods-DrawLine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +58,7 @@
 		00E66FB1AEB522409872BF93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B4B9652232FCA3000D46EA4 /* SBDropDown.framework */,
 				39642AA6CFCDFB138ED45506 /* Pods_DrawLine.framework */,
 			);
 			name = Frameworks;
@@ -134,6 +136,7 @@
 				55945F2B232D1F4B00280E3B /* Enums.swift */,
 				55945F29232D1EFC00280E3B /* Constant.swift */,
 				557F618C232CF95300B5ED8C /* Firebase */,
+				2B2FF85023324AB200B0F568 /* Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -168,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				557F6198232CF9AF00B5ED8C /* ViewController+DataBaseProtocol.swift */,
-				55945F2D232D26DD00280E3B /* ViewController+SBProtocol.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,7 +194,6 @@
 				557F6170232CF8C400B5ED8C /* Sources */,
 				557F6171232CF8C400B5ED8C /* Frameworks */,
 				557F6172232CF8C400B5ED8C /* Resources */,
-				A7F097EF8325908DB6DA8471 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,23 +273,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A7F097EF8325908DB6DA8471 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DrawLine/Pods-DrawLine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DrawLine/Pods-DrawLine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrawLine/Pods-DrawLine-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -300,7 +284,7 @@
 				557F619D232CFB8C00B5ED8C /* CanvasView.swift in Sources */,
 				557238F5232E5319006BAD11 /* LineModel.swift in Sources */,
 				55945F28232D1DC300280E3B /* UserController.swift in Sources */,
-				55945F2E232D26DD00280E3B /* ViewController+SBProtocol.swift in Sources */,
+				2B2FF85123324AB200B0F568 /* Extension.swift in Sources */,
 				557F617A232CF8C400B5ED8C /* ViewController.swift in Sources */,
 				55945F2C232D1F4B00280E3B /* Enums.swift in Sources */,
 				557F6178232CF8C400B5ED8C /* AppDelegate.swift in Sources */,
