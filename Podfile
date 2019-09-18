@@ -5,8 +5,6 @@ target 'DrawLine' do
   #pod 'Firebase'
   #pod 'Firebase/Database'
 
-  # SBDropDown for Color Pic
-  #pod 'SBDropDown'
 
 end
 

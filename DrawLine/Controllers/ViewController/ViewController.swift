@@ -43,7 +43,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnColorChangePressed(_ sender: UIButton) {
-        self.showSBDropDown(strTitle: "Select Color", arrSelectedIndex: [0], arrElemets: arrColor, sourceView: sender, sourceRect: nil)
+        let randomClr = UIColor.random
+        viewBoard.clrStroke = randomClr
+        sender.backgroundColor = randomClr
     }
     
     @IBAction func btnMenuPressed(_ sender: UIButton) {
@@ -81,6 +83,7 @@ class ViewController: UIViewController {
         let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
+        loadingIndicator.color = UIColor.blue
         loadingIndicator.startAnimating()
         alertController.view.addSubview(loadingIndicator)
         present(alertController!, animated: true, completion: nil)
@@ -101,4 +104,5 @@ class ViewController: UIViewController {
         debugPrint("\(String(describing: self)) controller removed...")
     }
 } //class
+
 
